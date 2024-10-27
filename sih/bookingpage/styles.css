@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #002e5b;
+    color: white;
+}
+
+.header-top {
+    width: 100%;
+}
+
+.header-top img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon-container {
+    display: none; /* Hide by default */
+    width: 100%;
+    background-color: #002e5b;
+    text-align: left;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #224b87;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Left-align the navigation items */
+    padding: 10px 20px; /* Add padding to align with header-top */
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 30px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 0; /* Reduced padding for better text-only hover */
+}
+
+nav ul li a:hover {
+    color: #ffa000; /* Text color change on hover */
+}
+
+/* Header Image Styles */
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header-image .image-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.header-image .image-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header-image .image-overlay h2 span {
+    color: #ffcc00;
+}
+
+.header-image .image-overlay p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+.registration-section {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.registration-section h2 {
+    background-color: #002e5b;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.description, .opd-services {
+    margin-top: 20px;
+}
+
+.description h3, .opd-services h3 {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.description p, .opd-services ul {
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    margin-top: 10px;
+}
+
+.opd-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.opd-services ul li {
+    margin-bottom: 10px;
+}
+
+.opd-services ul li strong {
+    color: #002e5b;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons a {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book-appointment {
+    background-color: #ff5733;
+}
+
+.view-appointment {
+    background-color: #00c4cc;
+}
+
+.book-appointment:hover {
+    background-color: #cc462a;
+}
+
+.view-appointment:hover {
+    background-color: #009e9b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Display the hamburger menu icon */
+    .menu-icon-container {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 40px; /* Adjusted to fit below the header */
+        left: 0;
+        width: 100%;
+        background-color: #224b87;
+        padding: 0;
+        margin: 0;
+        display: none; /* Hide menu initially */
+        z-index: 999; /* Ensure menu appears above other content */
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .registration-section {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-image .image-overlay h2 {
+        font-size: 20px;
+    }
+
+    .header-image .image-overlay p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        top: 40px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+        font-size: 14px;
+    }
+}

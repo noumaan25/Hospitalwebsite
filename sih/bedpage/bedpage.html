@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bed Management System</title>
+    <link rel="stylesheet" href="bedpage.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="navbar.png" alt="Header Banner">
+        </div>
+        <div class="menu-icon-container">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/reception dash/reception.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">OPD services</a></li>
+                <li><a href="#">Booked appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Beds Section</h2>
+            <div class="dropdown">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="general">General Ward</option>
+                    <option value="icu">ICU</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="maternity">Maternity</option>
+                    <option value="surgery">Surgical Ward</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <label for="ward">Ward</label>
+                <select id="ward">
+                    <!-- Ward options will be dynamically generated -->
+                </select>
+            </div>
+
+            <div class="bed-status">
+                <p><strong>Occupied Beds in Ward:</strong> <span id="occupied-count">0</span></p>
+                <p><strong>Total Occupied Beds:</strong> <span id="total-occupied-count">0</span></p>
+            </div>
+        </div>
+
+        <div class="ward-container">
+            <h2 id="ward-title">Ward</h2>
+            <div class="grid-container">
+                <!-- Beds will be generated here -->
+            </div>
+        </div>
+        <div class="deselect-button-container">
+            <button id="deselect-all" class="deselect-button">Deselect All Beds</button>
+        </div>
+        
+    </div>
+
+    <script src="bedpage.js"></script>
+</body>
+</html>

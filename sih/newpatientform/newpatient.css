@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pale-red {
+    color: #c0392b;
+}
+
+header {
+    background-color: #002e5b;
+    color: white;
+}
+
+.header-top {
+    width: 100%;
+}
+
+.header-top img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu-icon-container {
+    display: none;
+    width: 100%;
+    background-color: #002e5b;
+    text-align: left;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #224b87;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #002e5b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a406e;
+}
+
+.custom-dropdown {
+    appearance: none;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-dropdown:hover {
+    background-color: #e0e0e0;
+}
+
+.custom-dropdown:focus {
+    outline: none;
+    border-color: #1a406e;
+}

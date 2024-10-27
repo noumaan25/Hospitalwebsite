@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Hospital Portal</title>
+    <link rel="stylesheet" href="newpatient.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="navbar.png" alt="Header Banner">
+        </div>
+
+        <div class="menu-icon-container">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </div>
+        
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/reception dash/reception.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">OPD services</a></li>
+                <li><a href="#">Booked appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Patient Details Form</h1>
+
+        <!-- Name Section -->
+        <h3>Personal Details</h3>
+        <form id="admissionForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName" class="pale-red">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="middleName" class="pale-red">Middle Name</label>
+                    <input type="text" id="middleName" name="middleName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="pale-red">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <!-- Date of Birth and Gender -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dob" class="pale-red">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="pale-red">Gender</label>
+                    <select id="gender" name="gender" class="custom-dropdown" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Address Section -->
+            <h3>Address</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city" class="pale-red">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="area" class="pale-red">Area</label>
+                    <input type="text" id="area" name="area">
+                </div>
+                <div class="form-group">
+                    <label for="landmark" class="pale-red">Landmark</label>
+                    <input type="text" id="landmark" name="landmark">
+                </div>
+                <div class="form-group">
+                    <label for="houseNo" class="pale-red">House No</label>
+                    <input type="text" id="houseNo" name="houseNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode" class="pale-red">Pincode</label>
+                    <input type="text" id="pincode" name="pincode" required>
+                </div>
+            </div>
+
+            <!-- Phone Number Section -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phoneNumber" class="pale-red">Phone Number</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10,12}" title="Enter a 10 or 12 digit phone number">
+                </div>
+            </div>
+
+            <!-- Consultant Section -->
+            <h3>Consultant</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="consultantName" class="pale-red">Consultant Name</label>
+                    <input type="text" id="consultantName" name="consultantName" required>
+                </div>
+            </div>
+
+            <!-- Appointment Date and Time -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dateBooked" class="pale-red">Appointment Date</label>
+                    <input type="date" id="dateBooked" name="dateBooked" required>
+                </div>
+                <div class="form-group">
+                    <label for="timeBooked" class="pale-red">Appointment Time</label>
+                    <select id="timeBooked" name="timeBooked" class="custom-dropdown" required>
+                        <option value="9:00-9:30">9:00 - 9:30</option>
+                        <option value="9:30-10:00">9:30 - 10:00</option>
+                        <option value="10:00-10:30">10:00 - 10:30</option>
+                        <option value="10:30-11:00">10:30 - 11:00</option>
+                        <option value="11:00-11:30">11:00 - 11:30</option>
+                        <option value="11:30-12:00">11:30 - 12:00</option>
+                        <option value="12:00-12:30">12:00 - 12:30</option>
+                        <option value="12:30-1:00">12:30 - 1:00</option>
+                        <option value="1:00-1:30">1:00 - 1:30</option>
+                        <option value="1:30-2:00">1:30 - 2:00</option>
+                        <option value="2:00-2:30">2:00 - 2:30</option>
+                        <option value="2:30-3:00">2:30 - 3:00</option>
+                        <option value="3:00-3:30">3:00 - 3:30</option>
+                        <option value="3:30-4:00">3:30 - 4:00</option>
+                        <option value="4:00-4:30">4:00 - 4:30</option>
+                        <option value="4:30-5:00">4:30 - 5:00</option>
+                        <option value="5:00-5:30">5:00 - 5:30</option>
+                        <option value="5:30-6:00">5:30 - 6:00</option>
+                        <option value="6:00-6:30">6:00 - 6:30</option>
+                        <option value="6:30-7:00">6:30 - 7:00</option>
+                        <option value="7:00-7:30">7:00 - 7:30</option>
+                        <option value="7:30-8:00">7:30 - 8:00</option>
+                        <option value="8:00-8:30">8:00 - 8:30</option>
+                        <option value="8:30-9:00">8:30 - 9:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Receptionist Name -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="receptionistName" class="pale-red">Receptionist Name</label>
+                    <input type="text" id="receptionistName" name="receptionistName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="newpatiient.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+
+header {
+    background-color: #002e5b;
+    color: white;
+}
+
+.header-top {
+    width: 100%;
+}
+
+.header-top img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu-icon-container {
+    display: none; 
+    width: 100%;
+    background-color: #002e5b;
+    text-align: left;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #224b87;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10px 20px; 
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 0; 
+}
+
+nav ul li a:hover {
+    color: #ffa000; /* Text color change on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding-bottom: 100px; 
+}
+
+.dashboard-header {
+    text-align: left; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    background-color: white; /* Change background behind buttons to white */
+}
+
+.dashboard-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333; /* Default color */
+}
+
+/* test colout button */
+#new-patient span { color: #4D7732; } /* Red */
+#immediate-admit span { color: #7A2917; } /* Blue */
+#inpatient span { color: #6A2346; } /* Green */
+#update-patient-details span { color: #5686E1; } /* Orange */
+
+#beds-available span { color: #9B5F33; } /* Purple */
+#ambulance span { color: #FF0000; } /* Pink */
+#pharmacy span { color: #7A2917; } /* Dark Turquoise */
+#blood-bank span { color: #7A2917; } /* Dark Red */
+
+#outpatient-reports span { color: #F6AB27; } /* Dark Orange */
+#discharge-reports span { color: #6800D1; } /* Steel Blue */
+#inpatient-reports span { color: #D300F5; } /* Lime Green */
+#death-reports span { color: #555555; } /* Tomato */
+
+#online-appointments span { color: #304BF6; } /* Dark Green */
+#doctor-working-hours span { color: #7AA65C; } /* Dark Blue */
+#notice-board span { color: #CEA8BC; } /* Firebrick */
+
+.dashboard-button img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.dashboard-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgb(0, 29, 108);
+}
+
+/* Footer Styles */
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002e5b;
+    position: fixed;
+    width: 100%;
+    bottom: 20%;
+} */
+/* 
+.logout-button {
+    color: white;
+    background-color: #ffa000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #ff8f00;
+} */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    .menu-icon-container {
+        display: block; 
+    }
+
+    .menu-icon {
+        font-size: 26px;
+    }
+
+    .menu-icon-container.open + nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #224b87;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-button {
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+
+    .dashboard-button img {
+        height: 40px;
+        margin-bottom: 8px;
+    }
+}
